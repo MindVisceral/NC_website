@@ -1,0 +1,15 @@
+<!-- First, get a gradient -->
+<!-- This one is only 60x60 pixels. The smaller the resolution, the 'clearer' and muddier the effect will be -->
+<svg viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'>
+  <filter id='noiseFilter'>
+	<!-- We use a fractal Noise with frequency of 1, and 4 octaves. The frequency can be increased for a clearer picture -->
+    <feTurbulence 
+      type='fractalNoise' 
+      baseFrequency='1.0' 
+      numOctaves='4' 
+      stitchTiles='stitch'/>
+  </filter>
+  
+  <!--  -->
+  <rect width='100%' height='100%' filter='url(#noiseFilter)'/>
+</svg>

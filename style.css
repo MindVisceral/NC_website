@@ -1,0 +1,72 @@
+
+
+
+
+body {
+	/* This will be our background */
+	/* It takes up the whole page horizontally and vertically */
+	width: fill;
+	height: fill;
+	/* The background is just a linear gradient with the cool_gradient svg applied over it. */
+	/* The second colour should be at least partially transparent for best effect. */
+	background:
+		linear-gradient(0deg, rgba(84, 154, 250, 250), transparent),
+		url(/cool_gradient.svg);
+	/* Contrast is set very high for a very pixelate background */
+	filter: contrast(2000%) brightness(100%));
+
+	font-family: sans-serif;
+	
+}
+
+/* Default */
+div {
+
+  /* Regular border */
+  width: fill;
+  border: 5px solid gray;
+  padding: 25px;
+  margin: 35px;
+}
+
+/* Specific to Sections */
+div.section {
+	
+  /* Sections have light backgrounds */
+  background: lightgray;
+	
+  /* Main border around Sections */
+  width: fill;
+  border: 5px solid dimgray;
+}
+
+/* Specific to Subsections */
+div.subsection {
+  
+  /* Subsections backgrounds are transaprent to show the main background */
+  /* background: rgba(0, 0, 0, 0); */
+  background: WhiteSmoke;
+	
+  /* Regular border */
+  width: fill;
+  border: 5px solid gray;
+}
+
+h1 {
+  background: white;
+	
+  font-family: serif;
+  display: inline;
+  
+  /* Outset type border */
+  border: 5px outset gray;
+  padding: 5px;
+  margin: 20px;
+}
+
+/* Lists are centerd */
+ul.ul_list {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+}
